@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Vega Suárez - Cómico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #32CD32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4682B4;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .section-title {
+            color: #32CD32;
+            border-bottom: 2px solid #4682B4;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        .photo-gallery, .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-gallery img, .video-gallery iframe {
+            width: 200px;
+            height: auto;
+            border: 2px solid #4682B4;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jorge Vega Suárez</h1>
+        <p>Cómico</p>
+    </header>
+    <nav>
+        <a href="#about">Acerca de mí</a>
+        <a href="#shows">Shows</a>
+        <a href="#photos">Fotos</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about">
+        <h2 class="section-title">Acerca de mí</h2>
+        <p>Hola, soy Jorge Vega Suárez, un cómico apasionado por hacer reír a la gente. Mi carrera comenzó hace 10 años y desde entonces he actuado en numerosos escenarios y programas de televisión. Mis actuaciones se caracterizan por el humor inteligente y la capacidad de conectar con el público.</p>
+    </section>
+    <section id="shows">
+        <h2 class="section-title">Shows</h2>
+        <p>Aquí puedes encontrar información sobre mis próximos shows y eventos pasados.</p>
+        <!-- Añade aquí información sobre tus shows -->
+    </section>
+    <section id="photos">
+        <h2 class="section-title">Fotos</h2>
+        <div class="photo-gallery">
+            <!-- Añade aquí tus fotos -->
+            <img src="ruta/a/tu/foto1.jpg" alt="Foto 1">
+            <img src="ruta/a/tu/foto2.jpg" alt="Foto 2">
+        </div>
+    </section>
+    <section id="videos">
+        <h2 class="section-title">Videos</h2>
+        <div class="video-gallery">
+            <!-- Añade aquí tus videos -->
+            <iframe src="https://www.youtube.com/embed/tu_video1" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/tu_video2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="section-title">Contacto</h2>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:jorge@example.com">jorge@example.com</a></li>
+            <li>Teléfono: +123 456 7890</li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/jorgevegasurez">linkedin.com/in/jorgevegasurez</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jorge Vega Suárez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
