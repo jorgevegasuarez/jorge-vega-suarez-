@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre del Cómico - Sitio Web</title>
+  <style>
+        /* Estilos CSS pueden ser definidos aquí o en un archivo externo */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-icons li a {
+            color: #333;
+            font-size: 24px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nombre del Cómico</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li>
+          <a href="#sobre-mi">Sobre Mí</a>
+        </li>
+        <li>
+          <a href="#videos">Videos</a>
+        </li>
+        <li>
+          <a href="#fotos">Fotos</a>
+        </li>
+        <li>
+          <a href="#shows">Shows</a>
+        </li>
+        <li>
+          <a href="#noticias">Noticias</a>
+        </li>
+        <li>
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="inicio" class="section">
+      <h2>Bienvenido a mi sitio web</h2>
+      <p>Aquí encontrarás información sobre mis shows, videos cómicos y mucho más.</p>
+    </section>
+    <section id="sobre-mi" class="section">
+      <h2>Sobre Mí</h2>
+      <p>Una breve descripción personal que destaque tu estilo humorístico y experiencia.</p>
+      <ul class="social-icons">
+        <li>
+          <a href="#" target="_blank"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"></a>
+        </li>
+      </ul>
+    </section>
+    <section id="videos" class="section">
+      <h2>Videos</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="fotos" class="section">
+      <h2>Fotos</h2>
+      <div class="gallery"><img src="ruta_a_tu_imagen.jpg" alt="Descripción de la imagen"></div>
+    </section>
+    <section id="shows" class="section">
+      <h2>Shows</h2>
+      <p>Calendario o lista de próximos shows y eventos:</p>
+      <ul>
+        <li>Fecha del Show - Lugar - Ciudad</li>
+      </ul>
+    </section>
+    <section id="noticias" class="section">
+      <h2>Noticias</h2>
+      <p>Últimas noticias y actualizaciones sobre mis proyectos:</p>
+      <ul>
+        <li>Fecha - Título de la Noticia</li>
+      </ul>
+    </section>
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <p>Formulario de contacto o información para que los interesados puedan contactarte:</p>
+      <form action="enviar_email.php" method="post">
+        <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required=""><br>
+        <br>
+        <label for="email">Email:</label> <input type="email" id="email" name="email" required=""><br>
+        <br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required=""></textarea><br>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>Derechos Reservados © 2024 | Nombre del Cómico</p>
+  </footer>
+</body>
+</html>
